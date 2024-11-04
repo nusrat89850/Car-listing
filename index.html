@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-serif bg-white">
+    <!--header section-->
+    <div class="max-w-[1280px] mx-auto p-4 flex items-center justify-between">
+        
+        <div>
+            <img src="./images/logo.png" class="h-10 w-32">
+        </div>
+        <ul class="flex-1 text-center">
+            <li class="list-none inline-block px-5"></li><a href="#" class="text-gray-700 text-xl font-semibold px-2 hover:text-gray-400">HOME</a></li>
+            <li class="list-none inline-block px-5"></li><a href="#" class="text-gray-700 text-xl font-semibold px-2 hover:text-gray-400">ALL CARS</a></li>
+            <li class="list-none inline-block px-5"></li><a href="#" class="text-gray-700 text-xl font-semibold px-2 hover:text-gray-400">OUR SERVICES</a></li>
+            <li class="list-none inline-block px-5"></li><a href="#" class="text-gray-700 text-xl font-semibold px-2 hover:text-gray-400">REVIEWS</a></li>
+            <li class="list-none inline-block px-5"></li><a href="#" class="text-gray-700 text-xl font-semibold px-2 hover:text-gray-400">CONTACT US</a></li>
+        </ul>
+    </div>
+    <!--HERO SECTION-->
+    <div class="h-screen bg-no-repeat bg-center bg-cover bg-[url('./images/BG.jpeg')]">
+        <div class="max-w-[1280px] mx-auto p-4">
+            <h1 class="text-6xl text-[#000000] font-bold mt-16 text-center">The easiest way to buy a car</h1>
+            <p class="text-2xl  text-[#000000] mt-5 text-center">Get a high-end conversion-focused website for your agency. Suited for<br>a wide variety of niches and markets.</p>
+            <div class="flex items-center justify-center">
+               <a href="#" class="text-white text-xl font-bold bg-[#000000] inline-block mt-5 border-gray-600 border-2 rounded-full px-5 py-3 hover:bg-gray-600 hover:text-white duration-500">View More</a>
+            </div>
+        </div>
+    </div>
+    <!--icon section-->
+    <div class="max-w-[1280px] mx-auto p-4">
+        <div class="flex items-center justify-between mt-20">
+            <img src="./images/img5.png" class="h-10">
+            <img src="./images/img3.png" class="h-8">
+            <img src="./images/img4.png" class="h-8">
+            <img src="./images/img1.png" class="h-8">
+            <img src="./images/img2.png" class="h-10">
+        </div>
+    </div>
+    <!--sell car section-->
+    <div class="h-screen bg-no-repeat bg-center bg-cover bg-[url('./images/bg2.jpeg')] mt-20">
+        <div class="max-w-[1280px] mx-auto p-4">
+        <h1 class="text-6xl text-[#000000] font-bold mt-80 text-center">Why you can trust us</h1>
+        <div class="grid grid-cols-3 gap-10 mt-5">
+            <div class="bg-gray-700 rounded-3xl p-4 flex flex-col items-center cursor-pointer hover:bg-gray-500 hover:duration-1000">
+                <img src="./images/icon1.svg" class="h-12">
+                <h3 class="text-xl text-white font-semibold mt-5">No hidden fees on arrival</h3>
+                <p class="text-sm text-white text-center mt-2">Know your purchase: Tools to calculate budget, financing and more</p>
+            </div>
+            <div class="bg-gray-700 rounded-3xl p-4 flex flex-col items-center cursor-pointer hover:bg-gray-500 hover:duration-1000">
+                <img src="./images/icon2.svg" class="h-12">
+                <h3 class="text-xl text-white font-semibold mt-5">No credit card needed</h3>
+                <p class="text-sm text-white text-center mt-2">Know before you buy: Honest reviews, rankings and video test-drives.</p>
+            </div>
+            <div class="bg-gray-700 rounded-3xl p-4 flex flex-col items-center cursor-pointer hover:bg-gray-500 hover:duration-1000">
+                <img src="./images/icon3.svg" class="h-12">
+                <h3 class="text-xl text-white font-semibold mt-5">Fast booking process</h3>
+                <p class="text-sm text-white text-center mt-2">Know your offer: Deal ratings on new and used listings near you</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--explore vehicle section-->
+    <div class="max-w-[1280px] mx-auto p-4">
+        <h1 class="text-6xl text-[#000000] font-bold mt-16 text-center">Explore our vehicles</h1>
+        
+        <div class="flex items-center justify-center gap-10">
+            <button onclick="economyFunction()" class="text-white text-xl mt-10 font-bold bg-[#000000] inline-block border-gray-600 border-2 rounded-full px-5 py-3 hover:bg-gray-600 hover:text-white duration-500">Economy Cars</button>
+            <button onclick="exoticFunction()" class="text-white text-xl mt-10 font-bold bg-[#000000] inline-block border-gray-600 border-2 rounded-full px-5 py-3 hover:bg-gray-600 hover:text-white duration-500">Exotic Cars</button>
+            <button onclick="sportFunction()" class="text-white text-xl mt-10 font-bold bg-[#000000] inline-block border-gray-600 border-2 rounded-full px-5 py-3 hover:bg-gray-600 hover:text-white duration-500">Sport Cars</button>
+            <button onclick="luxaryFunction()" class="text-white text-xl mt-10 font-bold bg-[#000000] inline-block border-gray-600 border-2 rounded-full px-5 py-3 hover:bg-gray-600 hover:text-white duration-500">Luxary Cars</button>
+            <button onclick="suvFunction()" class="text-white text-xl mt-10 font-bold bg-[#000000] inline-block border-gray-600 border-2 rounded-full px-5 py-3 hover:bg-gray-600 hover:text-white duration-500">SUVs</button>
+        </div>
+     <div class="car" id="car-details" >
+        <div class="grid grid-cols-3 gap-5 mt-10" id="economy-car">
+            
+            <div >
+                 <img src="./images/economy-car1.jpg" class="rounded-xl">
+                 <p class="text-2xl text-[#000000] font-semibold">BMW 228 Gran Coupe</p>
+                 <p class="text-xl text-gray-800">Automatic * 4 Cylinder Turbo</p>
+                 <p class="text-xl text-gray-800">Avg. Price : $78.60 - $98.40</p>
+             </div>
+             <div>
+                 <img src="./images/economy-car2.jpg" class="rounded-xl">
+                 <p class="text-2xl text-[#000000] font-semibold">Fiat 500</p>
+                 <p class="text-xl text-gray-800">Automatic * 4 Cylinder Turbo</p>
+                 <p class="text-xl text-gray-800">Avg. Price : $18.60 - $28.50</p>
+             </div>
+             <div >
+                 <img src="./images/economy-car3.jpg" class="rounded-xl">
+                 <p class="text-2xl text-[#000000] font-semibold">Fiat 500X</p>
+                 <p class="text-xl text-gray-800">Automatic * 4 Cylinder Turbo</p>
+                 <p class="text-xl text-gray-800">Avg. Price : $23.60 - $31.40</p>
+             </div>
+             <div >
+                 <img src="./images/economy-car4.jpg" class="rounded-xl">
+                 <p class="text-2xl text-[#000000] font-semibold">Honda Civic</p>
+                 <p class="text-xl text-gray-800">Automatic * 4 Cylinder Turbo</p>
+                 <p class="text-xl text-gray-800">Avg. Price : $25.00 - $29.00</p>
+             </div>
+             <div >
+                 <img src="./images/economy-car5.jpeg" class="rounded-xl">
+                 <p class="text-2xl text-[#000000] font-semibold">Mercedes-Benz C300</p>
+                 <p class="text-xl text-gray-800">Automatic * 4 Cylinder Turbo</p>
+                 <p class="text-xl text-gray-800">Avg. Price : $44.50 - $56.80</p>
+             </div>
+             <div >
+                 <img src="./images/economy-car6.jpeg" class="rounded-xl">
+                 <p class="text-2xl text-[#000000] font-semibold">Mercedes-Benz A220</p>
+                 <p class="text-xl text-gray-800">Automatic * 4 Cylinder Turbo</p>
+                 <p class="text-xl text-gray-800">Avg. Price : $35.00 - $45.00</p>
+             </div>
+         </div>
+     </div>
+             <div class="flex items-center justify-center mt-10">
+                <a href="#" class="text-white text-xl font-bold bg-[#000000] inline-block mt-5 border-gray-600 border-2 rounded-full px-5 py-3 hover:bg-gray-600 hover:text-white duration-500">Show All Cars for Sell</a>
+             </div>
+        </div>
+        </div>
+<!--popular car section-->
+<div class="max-w-[1280px] mx-auto p-4">
+    <h1 class="text-6xl text-[#000000] font-bold mt-16 text-center">Explore popular car models</h1>
+    <p class="text-xl text-gray-600 font-semibold mt-5 text-center">Instant online approval, fast and free</p> 
+    <div class="grid grid-cols-3 gap-10 mt-16">
+        <div class="border-2 border-gray-400 rounded-xl">
+            <img src="./images/exotic-car1.jpg">
+            <div class="flex gap-5 mt-5 px-4">
+                <div>
+                    <img src="./images/popular1.png" class="h-12">
+                </div>
+                <div>
+                    <h1 class="text-xl text-[#000000] font-bold text-center">Bugatti Chiron Sport</h1>
+                    <p class="text-sm text-gray-500 font-semibold">Automatic * 839 hp</p>
+                </div>
+            </div>
+            <div class="flex justify-between mt-4 px-4">
+                <p class="text-lg text-gray-900">Body Type</p>
+                <p class="text-lg text-gray-900 font-semibold">Coupe</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Engine</p>
+                <p class="text-lg text-gray-900 font-semibold">6.5L V12 48V DOHC</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Transmission</p>
+                <p class="text-lg text-gray-900 font-semibold">7-Speed Automatic</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Interior and exterior colors</p>
+                <div class="flex gap-3">
+                    <div class="w-6 h-6 bg-gray-700 rounded-full"></div>
+                    <div class="w-6 h-6 bg-[#9d1433] rounded-full"></div>
+                </div>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Seats</p>
+                <p class="text-lg text-gray-900 font-semibold">2</p>
+            </div>
+            <p class="text-2xl mt-5 mb-4 px-4 text-gray-900 font-semibold">$1.550.000</p>
+        </div>
+        <!--card 2-->
+        <div class="border-2 border-gray-400 rounded-xl">
+            <img src="./images/economy-car5.jpeg">
+            <div class="flex gap-5 mt-5 px-4">
+                <div>
+                    <img src="./images/popular2.png" class="h-12">
+                </div>
+                <div>
+                    <h1 class="text-xl text-[#000000] font-bold text-center">Chevi Camaro ZL1</h1>
+                    <p class="text-sm text-gray-500 font-semibold">Manual * 502 hp</p>
+                </div>
+            </div>
+            <div class="flex justify-between mt-4 px-4">
+                <p class="text-lg text-gray-900">Body Type</p>
+                <p class="text-lg text-gray-900 font-semibold">Coupe</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Engine</p>
+                <p class="text-lg text-gray-900 font-semibold">6.2L V8 32V DOHC</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Transmission</p>
+                <p class="text-lg text-gray-900 font-semibold">6-Speed Automatic</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Interior and exterior colors</p>
+                <div class="flex gap-3">
+                    <div class="w-6 h-6 bg-[#bc7904] rounded-full"></div>
+                    <div class="w-6 h-6 bg-[#000000] rounded-full"></div>
+                </div>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Seats</p>
+                <p class="text-lg text-gray-900 font-semibold">2</p>
+            </div>
+            <p class="text-2xl mt-5 mb-4 px-4 text-gray-900 font-semibold">$75.000 - $95.000</p>
+        </div>
+          <!--card 3-->
+          <div class="border-2 border-gray-400 rounded-xl">
+            <img src="./images/exotic-car3.jpeg">
+            <div class="flex gap-5 mt-5 px-4">
+                <div>
+                    <img src="./images/popular3.png" class="h-12">
+                </div>
+                <div>
+                    <h1 class="text-xl text-[#000000] font-bold text-center">Ferrari 458 Italia Review</h1>
+                    <p class="text-sm text-gray-500 font-semibold">Manual * 562 hp</p>
+                </div>
+            </div>
+            <div class="flex justify-between mt-4 px-4">
+                <p class="text-lg text-gray-900">Body Type</p>
+                <p class="text-lg text-gray-900 font-semibold">Coupe</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Engine</p>
+                <p class="text-lg text-gray-900 font-semibold">4.5L V8 32V DOHC</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Transmission</p>
+                <p class="text-lg text-gray-900 font-semibold">7-Speed Automatic</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Interior and exterior colors</p>
+                <div class="flex gap-3">
+                    <div class="w-6 h-6 bg-[#602a27] rounded-full"></div>
+                    <div class="w-6 h-6 bg-[#6b100a] rounded-full"></div>
+                </div>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Seats</p>
+                <p class="text-lg text-gray-900 font-semibold">2</p>
+            </div>
+            <p class="text-2xl mt-5 mb-4 px-4 text-gray-900 font-semibold">$85.000 - $115.000</p>
+        </div>
+        <!--card 4-->
+        <div class="border-2 border-gray-400 rounded-xl">
+            <img src="./images/exotic-car4.jpeg" class="h-[262px]">
+            <div class="flex gap-5 mt-5 px-4">
+                <div>
+                    <img src="./images/popular3.png" class="h-12">
+                </div>
+                <div>
+                    <h1 class="text-xl text-[#000000] font-bold text-center">Ferrari 488 GTB</h1>
+                    <p class="text-sm text-gray-500 font-semibold">Automatic * 562 hp</p>
+                </div>
+            </div>
+            <div class="flex justify-between mt-4 px-4">
+                <p class="text-lg text-gray-900">Body Type</p>
+                <p class="text-lg text-gray-900 font-semibold">Coupe</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Engine</p>
+                <p class="text-lg text-gray-900 font-semibold">4.5L V8 32V DOHC</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Transmission</p>
+                <p class="text-lg text-gray-900 font-semibold">6-Speed Automatic</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Interior and exterior colors</p>
+                <div class="flex gap-3">
+                    <div class="w-6 h-6 bg-[#3f3d2f] rounded-full"></div>
+                    <div class="w-6 h-6 bg-[#a21635] rounded-full"></div>
+                </div>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Seats</p>
+                <p class="text-lg text-gray-900 font-semibold">2</p>
+            </div>
+            <p class="text-2xl mt-5 mb-4 px-4 text-gray-900 font-semibold">$165.000 - $195.000</p>
+        </div>
+        <!--card 5-->
+        <div class="border-2 border-gray-400 rounded-xl">
+            <img src="./images/exotic-car5.jpeg">
+            <div class="flex gap-5 mt-5 px-4">
+                <div>
+                    <img src="./images/popular4.png" class="h-12">
+                </div>
+                <div>
+                    <h1 class="text-xl text-[#000000] font-bold text-center">Ford Shelby GT500</h1>
+                    <p class="text-sm text-gray-500 font-semibold">Automatic * 750 hp</p>
+                </div>
+            </div>
+            <div class="flex justify-between mt-4 px-4">
+                <p class="text-lg text-gray-900">Body Type</p>
+                <p class="text-lg text-gray-900 font-semibold">Coupe</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Engine</p>
+                <p class="text-lg text-gray-900 font-semibold">5.5L V8 32V DOHC Turbo</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Transmission</p>
+                <p class="text-lg text-gray-900 font-semibold">7-Speed Automatic</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Interior and exterior colors</p>
+                <div class="flex gap-3">
+                    <div class="w-6 h-6 bg-[#d26509] rounded-full"></div>
+                    <div class="w-6 h-6 bg-[#0f2ca5] rounded-full"></div>
+                </div>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Seats</p>
+                <p class="text-lg text-gray-900 font-semibold">2</p>
+            </div>
+            <p class="text-2xl mt-5 mb-4 px-4 text-gray-900 font-semibold">$82.000</p>
+        </div>
+        <!--card 6-->
+        <div class="border-2 border-gray-400 rounded-xl">
+            <img src="./images/exotic-car6.jpg" class="h-[262px]">
+            <div class="flex gap-5 mt-5 px-4">
+                <div>
+                    <img src="./images/popular5.png" class="h-12">
+                </div>
+                <div>
+                    <h1 class="text-xl text-[#000000] font-bold text-center">Lamborghini Aventador</h1>
+                    <p class="text-sm text-gray-500 font-semibold">Automatic * 839 hp</p>
+                </div>
+            </div>
+            <div class="flex justify-between mt-4 px-4">
+                <p class="text-lg text-gray-900">Body Type</p>
+                <p class="text-lg text-gray-900 font-semibold">Coupe</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Engine</p>
+                <p class="text-lg text-gray-900 font-semibold">6.5L V12 48V DOHC</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Transmission</p>
+                <p class="text-lg text-gray-900 font-semibold">7-Speed Automatic</p>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Interior and exterior colors</p>
+                <div class="flex gap-3">
+                    <div class="w-6 h-6 bg-[#831314] rounded-full"></div>
+                    <div class="w-6 h-6 bg-[#c48a0f] rounded-full"></div>
+                </div>
+            </div>
+            <div class="flex justify-between mt-2 px-4">
+                <p class="text-lg text-gray-900">Seats</p>
+                <p class="text-lg text-gray-900 font-semibold">2</p>
+            </div>
+            <p class="text-2xl mt-5 mb-4 px-4 text-gray-900 font-semibold">$550.000</p>
+        </div>
+    </div>
+    <div class="flex items-center justify-center mt-10">
+        <a href="#" class="text-white text-xl font-bold bg-[#000000] inline-block border-gray-600 border-2 rounded-xl px-5 py-3 hover:bg-gray-600 hover:text-white duration-500">Explore All Cars</a>
+    </div>
+</div>
+</div>
+
+<!--review section-->
+<div class="max-w-[1280px] mx-auto p-4">
+    <h1 class="text-6xl text-[#000000] font-bold mt-16 text-center">Latest car reviews</h1>
+    <p class="text-xl text-gray-600 font-semibold mt-5 text-center">We'll Help You Buy With Confidence</p>
+    <div class="grid grid-cols-3 gap-5 mt-10">
+        <!--card 1-->
+        <div class="border-2 border-gray-400 p-6 rounded-xl">
+            <img src="./images/review1.jpg" class="h-[412px] w-[350px] rounded-lg">
+            <h1 class="text-3xl text-gray-800 font-semibold mt-5">Dodge SRT Hellcat</h1>
+            <div class="flex gap-3 mt-3">
+              <i class="fa fa-star" style="font-size:30px;color:#7d58e4"></i>
+              <h1 class="text-xl text-gray-700 font-semibold">4.88</h1>
+            </div>
+            <p class="text-xl text-gray-900 font-semibold mt-3">Based on 299 customers feedbacks and reviews</p>
+            <p class="text-lg mt-3 text-gray-800">"SRT Hellcat and its 800-plus hp iteration proves there's such thing as horsepower, which is exactly why we love it."</p>
+        </div>
+        <!--card 2-->
+        <div class="border-2 border-gray-400 p-6 rounded-xl">
+            <img src="./images/review2.jpg" class="h-[412px] w-[350px] rounded-lg">
+            <h1 class="text-3xl text-gray-800 font-semibold mt-5">Lamborghini SVJ</h1>
+            <div class="flex gap-3 mt-3">
+                <i class="fa fa-star" style="font-size:30px;color:#ecff42"></i>
+                <h1 class="text-xl text-gray-700 font-semibold">4.65</h1>
+              </div>
+              <p class="text-xl text-gray-900 font-semibold mt-3">Based on 190 customers feedbacks and reviews</p>
+              <p class="text-lg mt-3 text-gray-800">"The Aventador is an unadulterated supercar, zero practical qualities. Looks wild, expensive, and vociferous V-12."</p>
+        </div>
+        <!--card 3-->
+        <div class="border-2 border-gray-400 p-6 rounded-xl">
+            <img src="./images/review3.jpg" class="h-[412px] w-[350px] rounded-lg">
+            <h1 class="text-3xl text-gray-800 font-semibold mt-5">BMW 7-Series</h1>
+            <div class="flex gap-3 mt-3">
+              <i class="fa fa-star" style="font-size:30px;color:#60615c"></i>
+              <h1 class="text-xl text-gray-700 font-semibold">3.96</h1>
+            </div>
+            <p class="text-xl text-gray-900 font-semibold mt-3">Based on 68 customers feedbacks and reviews</p>
+            <p class="text-lg mt-3 text-gray-800">"While it's not as much fun to drive a BMW to be, the 7 has the comfort part of the luxury car equation down pat."</p>
+        </div>
+    </div> 
+    <div class="flex items-center justify-center mt-5">
+        <a href="#" class="text-white text-xl font-bold bg-[#000000] inline-block mt-5 border-gray-600 border-2 rounded-xl px-5 py-3 hover:bg-gray-600 hover:text-white duration-500">Explore All Reviews</a>
+    </div>
+</div>
+ <!--CONTACT section-->
+ <section class="flex items-center justify-center mt-20 mb-20">
+    <div class="max-w-[1280px] flex items-center">
+        <div>
+            <img src="./images/contact.jpg" class="w-full h-[669px]" >
+        </div>
+        <div class="bg-[#f2f2f2] p-10 shadow-lg">
+        <form action="https://formspree.io/f/xrbggozw" method="POST">
+        <h2 class="text-center text-3xl font-bold text-gray-600">Contact Us</h2>
+        <!--<h1 class="text-blue-600 text-center text-3xl">Restaurant Reservation Form</h1>-->
+        <div class="flex items-center justify-center gap-5">
+           <h1 class="text-gray-600 font-bold mt-10">Name<br>
+           <input type="text" placeholder="First" name="First" class="px-4 py-2 mr-5 rounded-xl" />
+           <input type="text" placeholder="Last" name="Last" class="px-4 py-2 rounded-xl" /></h1>
+        </div>
+        <div class="flex items-center justify-center gap-5 mt-5">
+           <h1 class="text-gray-600 font-bold rounded-xl">Email<br>
+           <input type="text" placeholder="e.g, abc@gmail.com" name="your_mail" class="px-4 py-2 rounded-xl" /></h1>
+           <h1 class="text-gray-600 font-bold rounded-xl">Phone<br>
+           <input type="number" placeholder="### ### ####" name="phone_number" class="px-4 py-2 rounded-xl" />
+        </div>
+        <div class="flex items-center justify-center gap-5 mt-5">
+            <h1 class="text-gray-600 font-bold rounded-xl">Reservation Date<br>
+            <input type="date" placeholder="MM/DD/YYYY" name="reservation_date" class="px-4 py-2 rounded-xl font-normal" /></h1>
+            <h1 class="text-gray-600 font-bold">Reservation Time<br>
+            <input type="time" placeholder="HH:MM AM" name="reservation_time" class="px-4 py-2 rounded-xl mr-10 font-normal" />
+         </div>
+         <h1 class="text-gray-600 font-semibold w-full ml-3 mt-5">Notes<br>
+         <textarea name="Your_message" cols="48" rows="5" placeholder="Hello, I am John..." class="rounded-xl p-4" ></textarea></h1>
+         <div class="flex items-center justify-center mt-2">
+            <input type="submit" class="text-white ml-5 text-lg font-bold cursor-pointer bg-[#000000] inline-block mt-5 border-gray-600 border-2 rounded-xl px-52 py-2 hover:bg-gray-600 hover:text-white duration-500"  value="Submit">
+        </div>
+       </form>
+    </div>
+    </div>
+</section>
+</div>
+
+<!--footer section-->
+<div class="bg-[#000000]">
+    <div class="max-w-[1280px] mx-auto mt-32">
+      <div class="grid grid-cols-4 gap-10">
+        <div class="mt-20">
+          <a id="WindUI" aria-label="WindUI logo" aria-current="page" class="flex items-center gap-2 py-3 text-lg whitespace-nowrap focus:outline-none lg:flex-1" href="javascript:void(0)">
+            <img src="./images/logo2.png" >
+          </a>
+          <div class="flex gap-5 mt-5">
+            <i class="fa fa-facebook" style="font-size:20px;color:#ffffff"></i>
+            <i class="fa fa-instagram" style="font-size:20px;color:#ffffff"></i>
+            <i class="fa fa-linkedin" style="font-size:20px;color:#ffffff"></i>
+            <i class="fa fa-twitter" style="font-size:20px;color:#ffffff"></i>
+          </div>
+        </div>
+        <div class="flex flex-col items-center mt-20">
+          <p class="text-white text-xl font-semibold">Pages</p>
+          <a href="#" class="text-white text-xl underline mt-7 hover:text-blue-600">Home</a>
+          <a href="#" class="text-white text-xl mt-5 hover:text-blue-600 hover:underline">All Cars</a>
+          <a href="#" class="text-white text-xl mt-5 hover:text-blue-600 hover:underline">Services</a>
+          <a href="#" class="text-white text-xl mt-5 hover:text-blue-600 hover:underline">Review</a>
+          <a href="#" class="text-white text-xl mt-5 hover:text-blue-600 hover:underline">Contact</a>
+        </div>
+        <div class="flex flex-col mt-20">
+          <p class="text-white text-xl font-semibold">Utility Pages</p>
+          <a href="#" class="text-white text-xl mt-5 hover:text-blue-600 hover:underline">Privacy Policy</a>
+          <a href="#" class="text-white text-xl mt-5 hover:text-blue-600 hover:underline">Cookie Policy</a>
+          <a href="#" class="text-white text-xl mt-5 hover:text-blue-600 hover:underline">Licensing</a>
+          <a href="#" class="text-white text-xl mt-5 hover:text-blue-600 hover:underline">404</a>
+        </div>
+        <div class="mt-20 mb-20">
+          <p class="text-white text-xl font-semibold">Follow Us On Instagram</p>
+          <div class="grid grid-cols-2 gap-3 mt-10">
+            <img src="./images/economy-car3.jpg" class="rounded-xl object-cover h-[150px] w-[200px]">
+            <img src="./images/exotic-car2.jpeg" class="rounded-xl object-cover h-[150px] w-[200px]">
+            <img src="./images/luxary4.jpeg" class="rounded-xl object-cover h-[150px] w-[200px]">
+            <img src="./images/suv4.jpg" class="rounded-xl object-cover h-[150px] w-[200px]">
+          </div>
+        </div>
+      </div>
+      <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+      <p class="text-[#a9b0a0] text-center p-8 text-lg">2024 © All Rights Reserved by <b>Nusrat Zahan</b></p>
+    </div>
+  </div>
+
+        <script src="app.js"></script>
+  </body>
+</html>
